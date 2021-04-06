@@ -1,3 +1,8 @@
+
+
+const searchbox = document.querySelector('.search-box');
+searchbox.addEventListener('keypress', setQuery);
+
 const APIController = (function() {
 
 const clientID = " ";
@@ -60,8 +65,6 @@ const _getTracks = async (token, tracksEndPoint) => {
 
 const _getTrack = async (token, tracksEndPoint) => {
 
-
-
     const result = await fetch(`${tracksEndPoint}`, {
         method: 'GET',
         headers: {'Authorization' : 'Bearer ' + token }
@@ -86,10 +89,6 @@ return {
         return _getTrack;
     }
 
-
-
 }
-
-
 
 })();
