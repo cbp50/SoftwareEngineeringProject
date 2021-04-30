@@ -1,1 +1,4 @@
+Notes for main.py
 
+main should be rewritten so that it can be sent song names as a parameter. If song is not in data.csv, display an error on the front end.
+data.csv is 1000 songs long and is the 1000 most popular songs in the database we received. This was done for data saving purposes.
