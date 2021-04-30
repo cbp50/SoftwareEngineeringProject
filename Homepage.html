@@ -13,7 +13,7 @@
             cursor: pointer;           
         }
 </style>
-
+ <body style="background-color:Mist Blue;">
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -22,12 +22,13 @@
     <title>Homepage</title>
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript">
-        function active(){
+        function active()
+     {
             var searchBar= document.getElementById('searchBar');
-            if(searchBar.value == 'Searching New Artist...')
+            if(searchBar.value == 'Searching...')
             {
                 searchBar.value = ''
-                searchBar.placeholder = 'Searching New Artist...'
+                searchBar.placeholder = 'Searching...'
             }
         }
 
@@ -36,7 +37,7 @@
             var searchBar= document.getElementById('searchBar');
             if(searchBar.value == '')
             {
-                searchBar.value = 'Searching New Artist...'
+                searchBar.value = 'Searching...'
                 searchBar.placeholder = ''
             }
         }
@@ -52,10 +53,10 @@
     </div>
     <center>
     <br/><br/><br/><br/>
-    <a href="#"></a>
+    <a href="#00BFFF"></a>
     <img src="logo.png" height="200" width="500"><br/><br/>
     <form action="search.php" method="POST">
-        <input type="text" id="searchBar" placeholder="" value="Searching New Artist..." maxlength="30" autocomplete="on" onmousedown="active()" onblur="inactive()"><input type="submit" id="searchBtn" value="Search">
+        <input type="text" id="searchBar" placeholder="" value="Searching..." maxlength="30" autocomplete="on" onmousedown="active()" onblur="inactive()"><input type="submit" id="searchBtn" value="Search">
     </form>
     </center>
 </body>
