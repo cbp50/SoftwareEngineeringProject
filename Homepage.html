@@ -5,7 +5,8 @@
             padding-right:75px;
             padding-top:50px;
         }
-        .sidebar button{
+        .sidebar button
+       {
             font-size:22px;
             border:none;
             margin:20px;
@@ -23,16 +24,19 @@
     <script type="text/javascript">
         function active(){
             var searchBar= document.getElementById('searchBar');
-            if(searchBar.value == 'Search...'){
+            if(searchBar.value == 'Searching New Artist...')
+            {
                 searchBar.value = ''
-                searchBar.placeholder = 'Search...'
+                searchBar.placeholder = 'Searching New Artist...'
             }
         }
 
-        function inactive(){
+        function inactive()
+       {
             var searchBar= document.getElementById('searchBar');
-            if(searchBar.value == ''){
-                searchBar.value = 'Search...'
+            if(searchBar.value == '')
+            {
+                searchBar.value = 'Searching New Artist...'
                 searchBar.placeholder = ''
             }
         }
@@ -51,7 +55,7 @@
     <a href="#"></a>
     <img src="logo.png" height="200" width="500"><br/><br/>
     <form action="search.php" method="POST">
-        <input type="text" id="searchBar" placeholder="" value="Search..." maxlength="30" autocomplete="on" onmousedown="active()" onblur="inactive()"><input type="submit" id="searchBtn" value="Search">
+        <input type="text" id="searchBar" placeholder="" value="Searching New Artist..." maxlength="30" autocomplete="on" onmousedown="active()" onblur="inactive()"><input type="submit" id="searchBtn" value="Search">
     </form>
     </center>
 </body>
