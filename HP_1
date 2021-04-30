@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<style>
+ .sidebar{
+            float:right;
+            padding-right:75px;
+            padding-top:50px;
+        }
+        .sidebar button{
+            font-size:22px;
+            border:none;
+            margin:20px;
+            cursor: pointer;           
+        }
+</style>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript">
+        function active(){
+            var searchBar= document.getElementById('searchBar');
+            if(searchBar.value == 'Search...'){
+                searchBar.value = ''
+                searchBar.placeholder = 'Search...'
+            }
+        }
+
+        function inactive(){
+            var searchBar= document.getElementById('searchBar');
+            if(searchBar.value == ''){
+                searchBar.value = 'Search...'
+                searchBar.placeholder = ''
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="sidebar">
+        <button onclick="window.open('https://www.google.com', '_blank');">Home</button><br><hr>
+        <button onclick="window.open('https://www.google.com', '_blank');">Artists</button><br><hr>
+        <button onclick="window.open('https://www.google.com', '_blank');">Playlists</button><br><hr>
+        <button onclick="window.open('https://www.google.com', '_blank');">New Releases</button><br><hr>
+        <button onclick="window.open('https://www.google.com', '_blank');">Other</button><br><hr>
+    </div>
+    <center>
+    <br/><br/><br/><br/>
+    <a href="#"></a>
+    <img src="logo.png" height="200" width="500"><br/><br/>
+    <form action="search.php" method="POST">
+        <input type="text" id="searchBar" placeholder="" value="Search..." maxlength="30" autocomplete="on" onmousedown="active()" onblur="inactive()"><input type="submit" id="searchBtn" value="Search">
+    </form>
+    </center>
+</body>
+</html>
