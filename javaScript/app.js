@@ -1,5 +1,3 @@
-
-
 const searchbox = document.querySelector('.search-box');
 searchbox.addEventListener('keypress', setQuery);
 
@@ -90,5 +88,22 @@ return {
     }
 
 }
+
+})();
+
+const UIController = (function(){
+
+    const DOMElements = {
+        searchBar = '#searchBar'
+    }
+
+    return{
+
+            songs: document.querySelector
+
+
+    }
+
+
 
 })();
